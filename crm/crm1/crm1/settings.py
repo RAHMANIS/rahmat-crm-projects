@@ -75,22 +75,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'crm1.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/3.1/ref/settings/#databases
-'''
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'demo_1',
-        'USER':'rahmat',
-        'PASSWORD':'kazmi123',
-        'HOST':'database-1.caepqwivsrhb.ap-south-1.rds.amazonaws.com',
-        'PORT':'5432',
-    }
-}
 
-
-'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -148,32 +133,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'hrk.kazmi@gmail.com'
-EMAIL_HOST_PASSWORD = 'kazmi123'
+EMAIL_HOST_USER = '*****.com'
+EMAIL_HOST_PASSWORD = '*****'
 #S3 BUCKETS CONFIG
-
-'''
-AWS_ACCESS_KEY_ID = 'AKIATK6HDKWVYGRR3U77'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'rahmat-crm-bucket'
-
-AWS_S3_FILE_OVERWRITE = False
-AWS_DEFAULT_ACL = None
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage' 
-'''
-
-'''
-
-<?xml version="1.0" encoding="UTF-8"?>
-<CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
-<CORSRule>
-    <AllowedOrigin>*</AllowedOrigin>
-    <AllowedMethod>GET</AllowedMethod>
-    <AllowedMethod>POST</AllowedMethod>
-    <AllowedMethod>PUT</AllowedMethod>
-    <AllowedHeader>*</AllowedHeader>
-</CORSRule>
-</CORSConfiguration>
-
-'''
